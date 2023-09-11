@@ -20,7 +20,7 @@ if ! [ -d "$dir_1" ]; then
 fi
 
 if ! [ -d "$dir_2" ]; then
-	sudo mkdir -p "$dir_2"
+        sudo mkdir -p "$dir_2"
 fi
 
 if [ -e "$symlink" ]; then
