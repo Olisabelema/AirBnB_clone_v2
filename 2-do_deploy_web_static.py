@@ -11,7 +11,7 @@ from os import getenv, environ
 
 env.hosts = ['100.25.165.191', '3.83.245.148']
 env.user = 'ubuntu'
-env.key_filename = '/home/~/.ssh/id_rsa'
+env.key_filename = '/home/root/.ssh/id_rsa'
 
 
 def do_deploy(archive_path):
