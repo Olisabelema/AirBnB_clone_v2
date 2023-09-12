@@ -4,13 +4,12 @@ from os import getenv, environ
 
 env.hosts = ['100.25.165.191', '3.83.245.148']
 env.user = 'ubuntu'
-env.key_filename = '/home/vagrant/.ssh/id_rsa'
-
+env.key_filename = '/home/root/.ssh/id_rsa'
 
 def do_deploy(archive_path):
     """Deploys the web static to the server"""
     if not exists(archive_path):
-        print("Path does not exist\n")
+        print("path does not exist\n")
         return False
 
     try:
@@ -41,3 +40,4 @@ def do_deploy(archive_path):
     except Exception as e:
         print("Failed to Deploy New Version --> {}\n{}".format(release_version, str(e)))
         return False
+
